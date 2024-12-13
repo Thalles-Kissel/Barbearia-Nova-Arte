@@ -269,7 +269,7 @@ p {
 
 .video {
     position: relative;
-    height: 100vh;
+    height: 80vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -549,15 +549,23 @@ button {
         width: 350px;
     }
 
+    .video {
+        border-radius: 30px;
+        margin: 0px 40px 0px 40px;
+        text-align: center;
+    }
+
     .video video {
+        border-radius: 30px;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        min-width: 60%;
+        min-width:30%;
         min-height: 8cqmin;
         z-index: 0;
         object-fit: cover;
+
     }
 
     .p2 {
