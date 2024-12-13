@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    background-color: #ffffff;
+    color: #161616;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+header{
+    margin-top: 15px;
+}
+header p{
+    margin-top: 5px;
+    font-size: 25px;
+}
+h2{
+    font-size: 60px;
+}
+h4{
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 30px; 
+}
+p{
+    font-size: 25px ;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+table{
+     /* formata a tabela */
+    border: 1px #000000 solid;
+    width: 50%;
+    margin:auto;
+    border-collapse: collapse;
+    font-family: "Poppins", sans-serif;
+   
+}
+/* formatar as linhas da tabela  */
+th, td{
+    border: 3px #f3ae2e solid;
+    padding: 10px;
+}
+.mae{
+    /* div pai */
+    display: flex;
+    justify-content: center;
+}
+ 
+.uva{
+    /* espaça o icone  */
+    margin: 15px;
+}
+  /* formata o cabecalho da tabela */
+th{
+    background-color: #f3ae2e;
+}
+.footer{
+    margin-top: 40px;
+}
+
+
+button{
+      /* formatação do botão antes do efeito hover */
+    background-color: #f3ae2e;
+    color: #fff;
+    border: 1px solid;
+    border-color: white;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    width: 17%;
+   text-decoration: none;
+    color: #000000;
+    font-size: 15px; 
+    margin-bottom: 20px;
+}
+
+
+button a{
+    /* cor da escrita do botão */
+    color: #fff;
+}
+
+button:hover{
+    /* muda a cor do botão ao passar o mause sobre ele */
+    background-color: #000000;
+    color: #f3ae2e;
+    border: 1px solid #f3ae2e;
+    box-shadow: 0 4px 8px 0 #1d1d1d, 0 3px 10px 0 #000000f6;
+    
+}
+button a:hover{
+    /* muda a cor a escrita do botão ao passar o mause sobre ele */
+    color: #f3ae2e;
+}
+
+iframe{
+    border-radius: 30px;
+     /* cria um sombra sobre o iframe */
+    box-shadow:  0 0 20px 2px #1d1d1d;
+}
+ /* o dark mode deixa a pagina na tematica escura */
+.dark-mode{
+    background-color: #161616;
+    color: #ffffff;
+}
+.dark-mode button{
+    background-color: #000000;
+    color: #f3ae2e;
+    border: 1px solid #f3ae2e;
+}
+.dark-mode button:hover{
+    background-color: #f3ae2e;
+    color: #000000;
+    border: 1px solid #000000;
+    box-shadow: 0 4px 8px 0 #f8cb76, 0 3px 10px 0 #ffb01ef6;
+}
+
+.dark-mode iframe{
+    box-shadow: 0 8px 16px 0 #f8cb76, 0 6px 20px 0 #ffb01ef6;
+}
+/* faz a responsividade */
+@media(max-width: 768px){
+    
+        h2{
+            font-size: 40px;
+        }
+        h4{
+            font-size: 35px;
+        }
+        p{
+            font-size: 25px;
+        }
+   
+        iframe{
+           width: 90%;
+           height: 300px;
+       }
+    
+       table{
+           width: 90%;
+       }
+
+       button{
+        width: 40%;
+       }
+}

@@ -1,0 +1,477 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* ===========Formatação do Header=============== */
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+header h1 {
+    font-size: 5vh;
+    margin-top: 0.5vh;
+}
+
+.logo {
+    margin-top: 2vh;
+    display: flex;
+
+    width: 100%;
+    justify-content: end;
+}
+
+.logo div {
+    margin-left: 2vh;
+    background-repeat: no-repeat;
+    background-size: 8vh 7vh;
+    display: flex;
+    width: 100px;
+    background-image: url(./imagens/LogoPositiva.png);
+}
+
+/* ===============Conclusão do Header=============== */
+
+
+
+
+/* ------Menu Hamburguer------ */
+
+
+
+/* O elemento #menu tem um índice z de 2, o que significa que ele vai ficar em cima de todos os outros elementos */
+#menu {
+    
+    z-index: 2;
+}
+
+/* O elemento #menu-bar é o botão do menu hamburguer. Ele tem uma largura de 190% e uma altura de 15% em relação ao seu pai */
+#menu-bar {
+    
+    width: 140%;
+    height: 5dvh;
+    margin: 30px 0 20px 20px;
+    /* O cursor do mouse muda para uma mãozinha quando passa por cima do botão */
+    cursor: pointer;
+}
+
+/* As barras são os elementos que compoem o menu hamburguer. Elas têm uma altura de 5px e uma largura de 100%. Elas também têm uma borda arredondada e uma transição suave */
+.bar {
+    height: 1vh;
+    width: 5.5vh;
+    
+    color: #ffffff;
+    background-color: #000000;
+    display: block;
+    border-radius: 5px;
+    transition: 0.5s ease;
+}
+
+/* A barra 1 tem uma transformação de translação vertical de -4px */
+#bar1 {
+    transform: translateY(-4px);
+}
+
+/* A barra 3 tem uma transformação de translação vertical de 4px */
+#bar3 {
+    transform: translateY(4px);
+}
+
+/* O elemento .nav é o menu em si. Ele tem uma transição suave e começa escondido */
+.nav {
+    display: none;
+}
+
+/* A lista do menu tem um background color de #ecb65994 e uma borda arredondada */
+.nav ul {
+    /* border: 3px solid #ffff00; */
+    padding: 0 22px;
+    background-color: #00000094;
+    margin-left: 10px;
+    border-radius: 8px;
+}
+
+/* Cada item da lista tem um estilo de lista none e um padding de 12px na vertical */
+.nav li {
+    padding: 0px;
+    /* border: 3px solid #ffff00; */
+    list-style: none;
+    padding-bottom: 3px;
+}
+
+/* Cada link do menu tem um estilo de texto branco e um tamanho de fonte de 20px */
+.nav li a {
+    padding: 0;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Quando o mouse passa por cima do link, o estilo de texto muda para negrito */
+.nav li a:hover {
+    font-weight: bold;
+}
+
+.nav li button:hover {
+    font-weight: bold;
+
+}
+.nav li button{
+    font-size: 3vh;
+    border: none;
+    background-color: none;
+    color: #ffffff;
+    background-color: #00000000
+}
+
+/* O elemento .menu-bg é o background do menu. Ele tem uma posição absoluta e começa com uma largura e altura de 0 */
+.menu-bg,
+#menu {
+    /* border: 3px solid #ffff00; */
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+/* O background do menu tem uma borda arredondada e uma transição suave */
+.menu-bg {
+    /* border: 3px solid #ffff00; */
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(square, #DC052D, #DC052D);
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+/* Quando o menu é aberto, o estilo de .change é aplicado */
+.change {
+    display: block;
+}
+
+/* Quando o menu é aberto, as barras mudam de cor para branco */
+.change .bar {
+    background-color: #000000;
+}
+
+/* O estilo de .change-bg é aplicado quando o menu é aberto. Ele muda a largura e altura do background do menu */
+.change-bg {
+    
+    width: 520px;
+    height: 460px;
+    transform: translate(-60%, -30%);
+}
+
+/* ================Conclusao Menu Hamburguer=============== */
+
+body {
+    text-align: center;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+}
+
+.socorro {
+    font-size: 35px;
+}
+
+footer {
+    width: 100%;
+    /* esse codigo muda a cor de u ponto para outro */
+    background: linear-gradient(#333, #000);
+    color: white;
+    padding: 50px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 1.5;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+ /* isso configura todo o conteudo do footer em si */
+.row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col {
+    /* define o pixel em unidade */
+    flex-basis: 15%;
+    padding: 10px;
+}
+
+
+.col h3 {
+    margin-bottom: 20px;
+    font-size: 16px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+
+.col h3::after {
+    
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 50px;
+    height: 2px;
+    background: white;
+}
+
+
+
+.email-id,
+.col p {
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    margin: 10px 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+
+
+ul li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.icons {
+    margin-top: 20px;
+}
+
+.icons a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 20px;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.icons a:hover {
+    color: #f39c12;
+}
+
+.logow {
+    width: 300px;
+    height: 250px;
+}
+
+.divisor {
+    height: 75vh;
+    width: 95vw;
+}
+
+.divisor,
+.imagenzone,
+.imagenztwo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+
+}
+
+.pai {
+    display: flex;
+}
+
+button {
+    margin-top: 20px;
+    width: 160px;
+    height: 80px;
+    background-color: #f3ae2e;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 27px;
+    border: 2px solid #000000;
+}
+
+button a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* formatação do botao dentro do menu hamburguer */
+.tematica {
+    width: 100%;
+    height: 10%;
+    border-radius: 0px;
+    border: none;
+    font-family: 'poppins', sans-serif;
+    margin-top: 0%;
+} 
+.tematica a{
+    font-size: 1px;
+}
+
+/* hover significa ao passar por cima(com o mouse ou dedo) */
+.tematica:hover {
+    background-color: #ecb65900;
+    color: #ffffff;
+    border: none;
+    box-shadow: none;
+}
+
+button:hover {
+    background-color: #000000;
+    color: #f3ae2e;
+    border: 2px solid #f3ae2e;
+    box-shadow: 0 4px 8px 0 rgb(29, 29, 29), 0 3px 10px 0 rgba(0, 0, 0, 0.966);
+}
+
+button a:hover {
+    color: #f3ae2e;
+}
+/* css das imagens */
+.severino {
+    border-radius: 105px;
+    max-width: 290px;
+    max-height: 190px;
+    background-color: #f3ae2e;
+    border: 2px solid #000000;
+}
+/* classes com nomes esquisitos apenas para nos entendermos */
+
+
+
+
+/* =========== Dark Mode ===============  */
+
+.dark-mode {
+    background-color: #161616;
+    color: rgb(255, 255, 255);
+}
+
+.dark-mode button {
+    background-color: #000000;
+    color: #f3ae2e;
+    border: 1px solid #f3ae2e;
+
+}
+
+.dark-mode button:hover {
+    background-color: #f3ae2e;
+    color: #000000;
+    border: 1px solid #000000;
+    box-shadow: 0 4px 8px 0 #f8cb76, 0 3px 10px 0 #ffb01ef6;
+}
+
+.dark-mode header .logo {
+    background-color: #161616;
+    color: #ffffff;
+}
+
+.dark-mode .logo div {
+    background-repeat: no-repeat;
+    background-size: 8vh 7vh;
+    display: flex;
+    width: 100px;
+    background-image: url(./imagens/LogoNegativa.png);
+}
+
+.dark-mode .bar {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.dark-mode .tematica {
+    background-color: #00000000;
+    color: #ffffff;
+    border: none;
+
+}
+
+.dark-mode .tematica:hover {
+    background-color: #f3ae2e00;
+    color: #ffffff;
+    border: none;
+    box-shadow: none;
+}
+
+.dark-mode .logo div {
+    background-image: url(./imagens/LogoNegativa.png);
+}
+
+@media (max-width: 768px) {
+    .pai {
+        flex-direction: column;
+        margin-top: 80px;
+
+    }
+
+
+    .sangue,
+    .imagenz,
+    .balada {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2px;
+        margin-left: 5px;
+
+    }
+
+    .sangue {
+        margin-bottom: 50px;
+    }
+
+    button {
+        margin-top: 5px;
+        margin-bottom: 35px;
+        width: 40px;
+        height: 30px;
+        font-size: 18px;
+    }
+    .tematica{
+        height: 1px;
+    }
+
+    .severino {
+        width: 70%;
+    }
+
+    .bolha {
+        width: 140px;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+@media(max-width: 480px){
+    footer{
+        padding: 30px 0 20px;
+        font-size: 12px;
+    }
+
+    .icons a {
+        font-size: 20PX;
+        margin-right: 8PX;
+    }
+
+    .LOGO{
+        width: 80px;
+    }
+}
